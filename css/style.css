@@ -6,3 +6,28 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(201, 217, 245);
+    overflow: hidden;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.preview-container {
+  border: 1px solid black;
+  margin: 10px;
+  width: 95vw;
+  height: 70vh;
+  background-color: blanchedalmond;
+}
