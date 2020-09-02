@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -11,17 +13,117 @@
     box-sizing: border-box;
 }
 
+h3, h4{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 body{
     background-color: hsl(210, 46%, 95%);
-    width: 1440px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.preview-container {
+    /*border: 1px solid coral;*/
+    height: 40vh;
+    width: 50vw;
+
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
+    justify-content: center;
+
+    -webkit-box-shadow: 2px -1px 18px -5px rgba(153,141,153,1);
+    -moz-box-shadow: 2px -1px 18px -5px rgba(153,141,153,1);
+    box-shadow: 2px -1px 18px -5px rgba(153,141,153,1);
+}
+
+#drawer-img img{
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    height: 250px;
+    width: 250px;
+}
+
+#comment{
+    background-color: #fff;
+    height: 100%;
+   /* border: 1px solid coral;*/
+    border-radius: 0px 5px 5px 0px;
+    border-right: 1px solid white;
+    padding: 25px 30px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+}
+
+#comment p{
+
+    padding-top: 10px;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 200;
+
+}
+
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.user .user-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#user-profile img{
+    border-radius: 50%;
+    height: 50px;
+}
+
+#user-info{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+#user-info h4{
+    font-size: 12px;
+}
+
+
+#user-info p{
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+#share{
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.preview-container {
-
-    border: 1px solid black;
+/* selects any tag with this attribute*/
+[data-tooltip] {
+    position: relative;
+    cursor: default;
 }
+
+[data-tooltip]::after {
+    position: absolute;
+    width: 140px;
+    left: calc(50% - 70px);
+    content: attr(data-tooltip);
+}
+
