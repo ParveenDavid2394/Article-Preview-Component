@@ -9,47 +9,49 @@
   <title>Frontend Mentor | Article preview component</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <main></main>
-    <div class="preview-container">
+    <main>
 
-      <div id="drawer-img">
-        <img src="images/drawers.jpg" alt="">
-      </div>
+      <section class="drawer">
+        <img src="/images/drawers.jpg" alt="drawers">
+      </section>
 
-      <div id="comment">
-        <h4 id='preview-title'>
-          Shift the overall look and feel by adding these wonderful
-          touches to furniture in your home.
-        </h4>
-        <p id="preview-comment">
-          Ever been in a room and felt like something was missing? Perhaps
-          it felt slightly bare and uninviting. I’ve got some simple tips
-          to help you make any room feel complete.
-        </p>
+      <section class="content">
+        <article class="content">
+          <h3>Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home</h3>
 
-        <div class="user">
-          <div class="user-wrapper">
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+        </article>
 
-            <div id="user-profile">
-               <img src="images/avatar-michelle.jpg" alt="">
+        <div class="person">
+          <div class="user">
+            <div class="user-avatar">
+              <img src="/images/avatar-michelle.jpg" alt="UserPic">
             </div>
-
-            <div id="user-info">
-              <h4>Michelle Appleton</h4>
-              <p>28 Jun 2020</p>
+            <div class="user-name">
+              <span class="name">Michelle Appeton</span>
+              <span class="date">28 Jun 2020</span>
             </div>
           </div>
-
-          <div id="share">
-               <img id='share-action' src="images/icon-share.svg" alt="" data-tooltip="Share">
-          </div> 
-
+          <div class="share">
+            <p>Share</p>
+            <div class="triangle"></div>
+            <img src="/images/icon-facebook.svg" alt="FB">
+            <img src="/images/icon-pinterest.svg" alt="Pinterest">
+            <img src="/images/icon-twitter.svg" alt="Twitter">
+          </div>
+          <span class="share-btn"><i class="fas fa-share"></i></span>
         </div>
-      </div>
+      </section>
 
-    </div>
+    </main>
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
